@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternar Números</title>
+</head>
+<body>
+  <p id="numero">1</p>
+  <button onclick="alternarNumero()">Alternar Número</button>
+  <script>
+    let numeroAtual = 1;
+    
+    function alternarNumero() {
+        const elementoNumero = document.getElementById("numero");
+        numeroAtual = numeroAtual === 1 ? 2 : 1;
+        elementoNumero.textContent = numeroAtual;
+    }
+  </script>  
+</body>
+</html>
